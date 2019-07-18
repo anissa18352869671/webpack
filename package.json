@@ -28,6 +28,7 @@
   "dependencies": {
     "babel-loader": "^7.1.5",
     "echarts": "^4.2.1",
+    "mem": "^5.1.1",
     "vue": "^2.6.10"
   }
 }
