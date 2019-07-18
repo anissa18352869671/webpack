@@ -34,6 +34,9 @@ var config = {
                 fallback: "style-loader"
 
             })
+        }, {
+            test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+            loader: 'url-loader?limit=1024'
         }]
     },
     plugins: [

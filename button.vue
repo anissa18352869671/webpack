@@ -13,7 +13,8 @@ export default {
   },
   data() {
     return {
-      myColor: this.color
+      myColor: this.color,
+      change: false
     };
   },
   computed: {
@@ -25,7 +26,12 @@ export default {
   },
   methods: {
     handleClick(e) {
-      this.myColor = "red";
+      if (this.change) {
+        this.myColor = "red";
+      } else {
+        this.myColor = "blue";
+      }
+      this.change = !this.change;
       this.$emit("click", e);
       //   console.log(this);
     }
