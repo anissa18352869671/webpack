@@ -1,14 +1,15 @@
 <template>
   <div>
     <div>HELLO {{name}}</div>
-    <div>AAS</div>
+    <div>{{data}}</div>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      name: "Anissa"
+      name: "Anissa today",
+      data: "啊飒飒!"
     };
   }
 };
